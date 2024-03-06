@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>f.CryptoCoder</h1>
+  <div class="contenedor">
+    <div class="form">
+
+      <div>
+        <h3 class="subtitulo" for="encryptRadio">INGRESAR EL TEXTO<h3/>
+          <textarea id="inputText"></textarea>
+      </div>
+
+      <div>
+        <img src="/img/photo.png">
+        <input type="radio" id="encryptRadio" name="operation" value="encrypt" checked />
+        <label for="encryptRadio">Encriptar</label>
+        <input type="radio" id="decryptRadio" name="operation" value="decrypt"/>
+        <label for="decryptRadio">Desencriptar</label>
+
+        <button onclick="performOperation()">ENCRIPTAR</button>
+        <button onclick="copyText()">COPIAR</button>
+      </div>
+
+      <div>
+        <h3 class="subtitulo" for="encryptRadio">RESULTADO<h3/>
+          <textarea id="outputText"></textarea>
+      </div>
+
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
